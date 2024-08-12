@@ -83,7 +83,7 @@ private fun HomeScreenContent(
                     Icon(
                         modifier = Modifier.padding(16.dp),
                         imageVector = Icons.Sharp.Home,
-                        contentDescription = "home",
+                        contentDescription = stringResource(R.string.content_description_home),
                     )
                 }
             )
@@ -124,7 +124,7 @@ private fun SearchTile(searchQuery: String, onSearchStock: (String) -> Unit) {
                             isSearchMode = false
                         },
                     imageVector = Icons.Sharp.Close,
-                    contentDescription = "exit search",
+                    contentDescription = stringResource(R.string.content_description_exit_search),
                 )
             },
             singleLine = true,
@@ -144,7 +144,7 @@ private fun SearchTile(searchQuery: String, onSearchStock: (String) -> Unit) {
                         isSearchMode = true
                     },
                 imageVector = Icons.Sharp.Search,
-                contentDescription = "search",
+                contentDescription = stringResource(R.string.content_description_search),
             )
         }
     }
@@ -177,7 +177,7 @@ private fun ErrorStateContent(onRefreshStock: (Boolean) -> Unit) {
     ) {
         Image(
             painter = painterResource(R.drawable.t_rex_error_offline),
-            contentDescription = "Something went wrong"
+            contentDescription = stringResource(R.string.content_description_something_wrong)
         )
         Text(
             text = stringResource(R.string.home_screen_generic_error),
@@ -211,7 +211,7 @@ private fun EmptyStateContent(searchQuery: String) {
     ) {
         Image(
             painter = painterResource(R.drawable.ic_search),
-            contentDescription = "Something went wrong"
+            contentDescription = stringResource(R.string.content_description_no_results)
         )
         Text(
             text = stringResource(R.string.home_screen_no_results, searchQuery),

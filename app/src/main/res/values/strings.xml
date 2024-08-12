@@ -11,9 +11,16 @@
     <string name="home_screen_no_results">No results found for %1s</string>
     <string name="home_screen_no_results_message">Check your search for typos or try different search terms</string>
 
-
+    <string name="details_screen_title">Stock Details</string>
     <string name="details_screen_company">Company Name: %1s</string>
     <string name="details_screen_ticker">Ticker: %1s</string>
     <string name="details_screen_current_price">Current Price: %1s</string>
+
+    <string name="content_description_back">back</string>
+    <string name="content_description_home">home</string>
+    <string name="content_description_exit_search">exit search</string>
+    <string name="content_description_something_wrong">something went wrong</string>
+    <string name="content_description_search">search</string>
+    <string name="content_description_no_results">No results found</string>
 
 </resources>

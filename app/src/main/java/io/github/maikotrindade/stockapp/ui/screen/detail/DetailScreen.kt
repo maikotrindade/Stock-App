@@ -19,6 +19,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import io.github.maikotrindade.stockapp.R
@@ -31,18 +32,21 @@ fun DetailScreen(
     navController: NavHostController,
     stock: Stock,
 ) {
-    val scrollState = rememberScrollState()
     Scaffold(
         topBar = {
             TopAppBar(
                 scrollBehavior = TopAppBarDefaults.pinnedScrollBehavior(),
                 title = {
-                    Text(text = "Details screen")
+                    Text(
+                        text = stringResource(R.string.details_screen_title),
+                        style = MaterialTheme.typography.headlineSmall,
+                        fontWeight = FontWeight.Bold
+                    )
                 },
                 navigationIcon = {
                     Icon(
                         imageVector = Icons.AutoMirrored.Filled.ArrowBack,
-                        contentDescription = "back",
+                        contentDescription = stringResource(R.string.content_description_back),
                         modifier = Modifier.clickable {
                             navController.popBackStack()
                         }
