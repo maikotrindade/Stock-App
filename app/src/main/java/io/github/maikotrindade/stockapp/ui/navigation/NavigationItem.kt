@@ -1,11 +1,11 @@
 package io.github.maikotrindade.stockapp.ui.navigation
 
-enum class NavigationState {
-    HOME,
-    DETAILS,
+sealed class NavigationState {
+    data object Home : NavigationState()
+    data object Details : NavigationState()
 }
 
 sealed class NavigationItem(val route: String) {
-    data object Home : NavigationItem(NavigationState.HOME.name)
-    data object Details : NavigationItem(NavigationState.DETAILS.name)
+    data object Home : NavigationItem(NavigationState.Home.toString())
+    data object Detail : NavigationItem(NavigationState.Details.toString())
 }

@@ -8,7 +8,12 @@
     <string name="home_screen_error_try_again">Please try again at a later time.</string>
     <string name="home_screen_error_try_again_button">Try again</string>
 
-    <string name="home_screen_no_results">No results found for %s1</string>
+    <string name="home_screen_no_results">No results found for %1s</string>
     <string name="home_screen_no_results_message">Check your search for typos or try different search terms</string>
+
+
+    <string name="details_screen_company">Company Name: %1s</string>
+    <string name="details_screen_ticker">Ticker: %1s</string>
+    <string name="details_screen_current_price">Current Price: %1s</string>
 
 </resources>
