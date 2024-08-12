@@ -83,6 +83,7 @@ dependencies {
     implementation(libs.okhttp)
 
     implementation(libs.androidx.room.runtime)
+    implementation(libs.androidx.junit.ktx)
     kapt(libs.androidx.room.compiler)
     implementation(libs.androidx.room.ktx)
 
@@ -99,8 +100,8 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-
-    testImplementation(libs.mockito)
+    testImplementation(libs.mockk)
     testImplementation(libs.kotlinx.coroutines.test)
-    testImplementation(libs.kotlin.test.junit)
+    androidTestImplementation(libs.room.testing)
+    testImplementation (libs.core.ktx.test)
 }

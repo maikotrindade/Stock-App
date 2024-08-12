@@ -17,12 +17,13 @@ navigationCompose = "2.7.7"
 lifecycleRuntimeCompose = "2.8.4"
 roomKtx = "2.6.1"
 material = "1.12.0"
-
 junit = "4.13.2"
 junitVersion = "1.2.1"
-kotlinTestJunit = "1.8.22"
 coroutinesTest = "1.7.3"
-mockitoVersion = "4.2.0"
+mockkVersion = "1.12.0"
+roomTesting = "2.6.1"
+coreKtxTest = "1.6.1"
+junitKtx = "1.2.1"
 
 [libraries]
 gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
@@ -60,9 +61,11 @@ androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 
-mockito = { group = "org.mockito", name = "mockito-core", version.ref = "mockitoVersion" }
+mockk = { group = "io.mockk", name = "mockk", version.ref = "mockkVersion" }
 kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutinesTest" }
-kotlin-test-junit = { group = "org.jetbrains.kotlin", name = "kotlin-test-junit", version.ref = "kotlinTestJunit" }
+room-testing = { group = "androidx.room", name = "room-testing", version.ref = "roomTesting" }
+core-ktx-test = { group = "androidx.test", name = "core-ktx", version.ref = "coreKtxTest" }
+androidx-junit-ktx = { group = "androidx.test.ext", name = "junit-ktx", version.ref = "junitKtx" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
