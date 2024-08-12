@@ -21,5 +21,5 @@ object LocalModule {
         Room.databaseBuilder(context, AppDatabase::class.java, AppDatabase.DB_NAME).build()
 
     @Provides
-    fun provideDao(appDatabase: AppDatabase): StockDao = appDatabase.stockDao()
+    fun provideStockDao(appDatabase: AppDatabase): StockDao = appDatabase.stockDao()
 }

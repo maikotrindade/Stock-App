@@ -12,5 +12,4 @@ data class Stock(
 
     @SerializedName("currentPrice")
     var currentPrice: Double,
-
     ) : Serializable
