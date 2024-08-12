@@ -19,6 +19,11 @@ android {
         vectorDrawables { useSupportLibrary = true }
         multiDexEnabled = true
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField(
+            "String",
+            "BASE_URL",
+            "\"https://gist.githubusercontent.com/priyanshrastogi/\""
+        )
     }
 
     buildTypes {
@@ -62,6 +67,7 @@ dependencies {
     implementation(libs.androidx.ui)
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
+    implementation(libs.androidx.material3)
 
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
@@ -77,7 +83,6 @@ dependencies {
     annotationProcessor(libs.hilt.android.compiler)
     annotationProcessor(libs.androidx.hilt.compiler)
 
-    testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.ui.test.junit4)
