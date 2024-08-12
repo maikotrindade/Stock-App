@@ -20,6 +20,9 @@ material = "1.12.0"
 
 junit = "4.13.2"
 junitVersion = "1.2.1"
+kotlinTestJunit = "1.8.22"
+coroutinesTest = "1.7.3"
+mockitoVersion = "4.2.0"
 
 [libraries]
 gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
@@ -56,6 +59,10 @@ androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-man
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+
+mockito = { group = "org.mockito", name = "mockito-core", version.ref = "mockitoVersion" }
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutinesTest" }
+kotlin-test-junit = { group = "org.jetbrains.kotlin", name = "kotlin-test-junit", version.ref = "kotlinTestJunit" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
