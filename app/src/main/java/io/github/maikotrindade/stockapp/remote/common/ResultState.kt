@@ -1,4 +1,4 @@
-package io.github.maikotrindade.stockapp.common
+package io.github.maikotrindade.stockapp.remote.common
 
 data class ResultState<out T>(
     val status: Status,

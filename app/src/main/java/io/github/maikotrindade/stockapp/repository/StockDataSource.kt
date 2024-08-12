@@ -1,7 +1,7 @@
 package io.github.maikotrindade.stockapp.repository
 
-import io.github.maikotrindade.stockapp.common.ErrorState
-import io.github.maikotrindade.stockapp.common.ResultState
+import io.github.maikotrindade.stockapp.remote.common.ErrorState
+import io.github.maikotrindade.stockapp.remote.common.ResultState
 import io.github.maikotrindade.stockapp.local.dao.StockDao
 import io.github.maikotrindade.stockapp.mapping.StockMapper
 import io.github.maikotrindade.stockapp.remote.api.StockApi

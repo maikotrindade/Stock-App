@@ -1,4 +1,4 @@
-package io.github.maikotrindade.stockapp.common
+package io.github.maikotrindade.stockapp.remote.common
 
 import androidx.annotation.StringRes
 
